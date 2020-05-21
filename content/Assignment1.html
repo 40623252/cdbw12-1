@@ -1,25 +1,162 @@
-<h1>分組人員</h1>
-<p>group:1</p>
-<p>40723213<br/>40723215<br/>40723246<br/>----<br/>group:2</p>
-<p>40723240<br/>40523253<br/>40723237<br/>----<br/>group:3</p>
-<p>40723247<br/>40723205<br/>40723239<br/>----<br/>group:4</p>
-<p>40623251<br/>40623115<br/>40623144</p>
-<h1>group1</h1>
-<h2>40723213</h2>
-<p>test</p><h2>40723215</h2>
-<p><span>test</span></p><h2>40723246</h2>
-<p><span>test</span></p><h1>group2</h1>
-<h2>40723240</h2><h2>40523253</h2>
-<p></p><h2>40723237</h2><h1>group3</h1>
-<h2>40723247</h2>
-<p></p><h2>40723205</h2>
-<p><span>test</span></p><h2>40723239</h2>
-<p><span face="monospace"><strong>Ubuntu設定及API連線</strong></span></p>
-<p><span face="monospace">操作步驟:<br/>1.下載<a href="https://www.virtualbox.org/wiki/Downloads">vitualbox</a>、<a href="https://drive.google.com/open?id=143jFMheM1xjLxhLkSAouThLzj3WUYX6_">ubuntu</a>、<a href="https://drive.google.com/open?id=1KlnsgBFyp6OpCC_BlYH-jKL4uJixpoBl">CoppeliaSim</a>四輪車控制器檔案。<br/>2.開啟vitualbox，匯入ubuntu。<br/>3.設定虛擬主機的網路埠號。[NET:設定-&gt;網路-&gt;附加到(A)改成NAT-&gt;進階-&gt;連接埠轉送-&gt;設定三個埠號(22、8443、19999)]。<br/>4.設定完成後啟動ubuntu。<br/>5.輸入密碼kmol2020，並開啟lxterminal。<br/>6.輸入xterm&amp;開啟，並使用ctrl+右鍵將視窗放大。<br/>7.依照步驟打開coppeliasim，輸入ls查看內容。<br/>8.cd coppeliasim4_rev4接著輸入</span><span face="monospace">ls再來輸入</span><span face="monospace">cd  CoppeliaSim_Edu_V4_0_0_Ubuntu18_04輸入ls最後輸入./coppeliaSim.sh。<br/>9.開啟後打開檔案sdc.ttt。<br/>10.開啟啟動器，並開啟下載好的CoppeliaSim四輪車控制器檔案。<br/>11.將檔案中的car_model.py放入編譯器中，並執行。<br/>12.打開CoppeliaSim中的模擬，四輪車開始繞圈即成功。</span><span face="monospace"><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/8JmZOFvViWk" width="560"></iframe></span></p>
-<p><strong>week10  google用戶登陸</strong></p>
-<p><span>登錄到您的@gm帳戶</span><br/><span>鏈接到<a href="https://console.developers.google.com/">https://console.developers.google.com</a></span><br/><span>接受許可並創建Google API項目</span><br/><span>啟用Google +域API</span><br/><span>在Google + Domain API憑據下，按CONFIGURE CONSENT SCREEN按鈕</span><br/><span>選擇內部或外部用戶類型並添加新的應用程序名稱</span><br/><span>在“ API和服務”下，進入“憑據”頁面</span><br/><span>為Web應用程序創建“ OAuth 2.0客戶端ID”類型的憑據</span><br/><span>授權的JavaScript來源：https：// localhost：8443</span><br/><span>授權的重定向URI：https：// localhost：8443 / login / google /</span><br/><span>將您的客戶ID和客戶機密保存到oauth_gm.txt中</span></p>
-<p><span><span lang="zh-TW">開啟leo更改config中的scrum為加上學號的txt檔案名稱，</span><span lang="zh-TW">並且修改完成之後按下save和darwROC<br/>pip install authomatic<br/>開啟https://localhost:8443<br/>測試是否可以運作</span></span><span><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/IYOVwKY_Rzg" width="560"></iframe></span></p>
-<h2>Assignment1</h2>
+<!DOCTYPE html><html>
+        <head>
+        <title>cd2020 cdbw12-1</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+        
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+
+<!-- 啟用 LaTeX equations 編輯 -->
+<script src="https://scrum-3.github.io/web/math/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
+<script type="text/javascript">
+init_mathjax = function() {
+    if (window.MathJax) {
+        // MathJax loaded
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+            },
+            displayAlign: 'left', // Change this to 'center' to center equations.
+            "HTML-CSS": {
+                styles: {'.MathJax_Display': {"margin": 0}}
+            }
+        });
+        MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+    }
+}
+init_mathjax();
+</script>
+
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container-fluid">
+                <div class="row align-items-center">
+                <h1>CMSiMDE 網際內容管理系統</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">CMSiMDE 網際內容管理系統</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">Site Map</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='分組人員.html'>分組人員</a><li class='has-children'><a href='group1.html'>group1</a><ul class='dropdown'><li><a href='40723213.html'>40723213</a><li><a href='40723215.html'>40723215</a><li><a href='40723246.html'>40723246</a></li></ul><li class='has-children'><a href='group2.html'>group2</a><ul class='dropdown'><li><a href='40723240.html'>40723240</a><li><a href='40523253.html'>40523253</a><li><a href='40723237.html'>40723237</a></li></ul><li class='has-children'><a href='group3.html'>group3</a><ul class='dropdown'><li><a href='40723247.html'>40723247</a><li><a href='40723205.html'>40723205</a><li><a href='40723239.html'>40723239</a><li><a href='Assignment1.html'>Assignment1</a><li><a href='Assignment2.html'>Assignment2</a></li></ul><li class='has-children'><a href='group4.html'>group4</a><ul class='dropdown'><li><a href='40623251.html'>40623251</a><li><a href='40623115.html'>40623115</a><li><a href='40623144.html'>40623144</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+          
+        </header>
+    <div id="tipue_search_content">40723239 << <a href='40723239.html'>Previous</a> <a href='Assignment2.html'>Next</a> >> Assignment2<br /><h1>Assignment1</h1>
 <p><span>作業一:<br/><br/></span><span>1.請描述如何針對該課程進行有效的隨機分組，或者隨機進行點名？</span><br/><br/><span>2.描述如何為Windows 10 64位系統準備一個可移植的Python編程系統，以允許在Github上維護CMSiMDE網站，Pelican博客和js演示文稿？</span><br/><br/><span>3.您需要從</span><a href="http://www.coppeliarobotics.com/helpFiles/index.html">http://www.coppeliarobotics.com/helpFiles/index.html</a><span>了解什麼來實現四輪機器人？</span></p>
 <p>Random grouping 亂數分組程式</p>
 <p>描述如何針對該課程進行有效隨機分組，或隨機點名<span>?</span></p>
@@ -217,58 +354,46 @@
 </tr>
 </tbody>
 </table>
-<h2>Assignment2</h2>
-<p>1.2確定設計過程</p>
-<p>1.2.1確定每個人的設計過程</p>
-<p>有經驗的儘管所有轉錄數據都包含與設計過程有關的信息，它們都與其他內容混合在一起，包括情況項目的目標，目標，角色，必要的技能和知識，我們首先提出通過審查相關文獻以識別“過程要素”來建立編碼框架用於構建設計過程的文件。</p>
-<p>產品開發及其活動為信息過程。收集，創建，解釋，轉換和轉移。</p>
-<p>Ulrich和<span>Eppinger</span>（<span>2012</span>）將其描述為必要的信息對於注入的最終結果以轉化當前的設計問題解決下一個問題，以降低不確定性，從而產生產出，直到最終的結果就形成了。這被建模為轉換將功能規格（輸入）轉換為人工規格（輸出）</p>
-<p>（<span>Takeda</span>，<span>Veerkamp</span>，＆<span>Yoshikawa</span>，<span>1990; Tomiyama</span>＆<span>Yoshikawa</span>，<span>1986</span>）。</p>
-<p>Browning和<span>Ramasesh</span>（<span>2007</span>）指出，採用信息處理的觀點未能捕獲完整的信息流</p>
-<p>因為對交互的了解很少。他們認為確定組織單位之間的互動，因為它們會產生依賴性</p>
-<p>建立可交付流程模式的活動之間。總之，從這個角度來看，過程建模的基本元素是</p>
-<p>用<span>IPO</span>（<span>InputeProcesseOutput</span>）表示形式概括為“信息流”以及組織單位（人員，團隊，公司，等等。）。</p>
-<p>工程設計過程模型</p>
-<p>由<span>Pahl</span>等人提出。 （<span>2007</span>年）證明了每個階段。第一階段的輸入是“任務”，結果是“規範”再次進入下一階段。這樣，繪製連接輸入和結果的連續發展階段出來。關於“任務”和“設計活動”</p>
-<p>任務和評估結果。通常，評估發生在相對在很短的時間內決定“前進，重複或下降”。因此，我們命名了這些類型的活動（評估，設計審查，登門檢查，決策<span>-</span>此時，我們有兩個編碼類別：“任務”和“事件”。總而言之，我們可以使用四個編碼對設計過程進行建模</p>
-<p>類別； “任務”，“事件”，“信息流”和“互動”，並且可以是用階段的連接來表示。至此，設計階段流程可以用“<span><span> </span>inputetask</span>（設計活動）<span>eevent</span>（決策）以下內容描述瞭如何對過程元素進行編碼。</p>
-<p>信息流：信息流是在任務或事件時生成的發生。它總是伴隨著輸入和輸出。</p>
-<p>工程的輸入<span>:</span></p>
-<p>設計活動。我們對“從<span>ID</span>到<span>ED</span>的<span>3D CAD</span>數據”進行了編碼。</p>
-<p>互動：發生任務或事件時，兩組經常</p>
-<p>相互作用。例如，工業設計師檢查內部是否</p>
-<p>工程設計師建議他們通過提供空間來修改空間</p>
-<p>我們從每個轉錄的訪談數據中識別出流程要素。</p>
-<p>我們盡可能用參與者自己的話語標記他們。我們用了字段註釋作為補充數據源。在這樣做的同時，我們安排按時間順序將編碼後的元素按流程圖格式連接構建部分設計過程。該方法被廣泛採用以可視化工業流程模型（<span>Vergidis</span>，<span>Tiwari</span>和<span>Majeed</span>，<span>2008</span>年）。我們也確定了設計過程中涉及的項目類型和目標</p>
-<p>採訪數據。兩名研究人員執行了整個程序。一研究人員首先構建了部分設計流程，另一研究人員通過檢查採訪數據檢查了他們。結果，我們獲得了<span>45</span>部分公司使用<span>7-9</span>進行的部分設計過程（請參見表<span>2</span>）。</p>
-<p><img alt="" height="81" src="https://s40723239.github.io/cd2020/images/2.png" width="473"/></p>
-<p>1.2.2確定協作產品設計流程</p>
-<p>下一步是將每個公司的設計流程整合到協作中</p>
-<p>通過“馬賽克方法”進行設計過程。我們首先收集了部分設計</p>
-<p>公司中特定項目的流程。之後，我們通過比較和合併部分過程，合併過程元素。從工業設計師那裡提取的部分過程訪談數據提供了有關工業設計活動的豐富信息，包括與工程設計師的互動行為，但信息較少純工程設計活動。工程界也是如此設計。</p>
-<p>我們將公司的工業設計師的部分流程合併到了圍繞工業設計活動重建設計流程。在同一時間，我們利用工程設計師提供的信息來補充並從工程設計方面加強設計活動。我們圍繞同一工程設計活動重新構建設計流程辦法。我們最終將這兩個設計過程合併為一個協作產品設計過程。在鑲嵌方法中，結合交叉檢查的部分過程</p>
-<p>有助於提高可靠性和通用性。這明顯減少了構建信息不完整的流程的可能性</p>
-<p>通過抵消彼此的信息。因此，“馬賽克方法”減少了構建錯誤過程的可能性。</p>
-<p>最後，我們通過合併階段元素（輸入，任務，事件和輸出）放入框中，並用相關任務將其命名（請參見圖<span>2</span>）。例如，工業設計師開始繪製各種想法根據前一階段的研究結果繪製的草圖。然後，他們選擇一個通過評估獲得一些最佳草圖。根據選擇結果，他們決定進入下一階段或重複當前階段。因此，‘理想草圖階段由“研究結果（輸入），“想法草圖（任務）”，“評估”（事件）和“最佳草圖（輸出）”。</p>
-<p><img alt="" height="211" src="https://s40723239.github.io/cd2020/images/3.png" width="498"/></p>
-<p>1.2.3簡化流程</p>
-<p>一旦制定了每個公司的協作產品設計流程，我們對它們進行了分類，以確定其類型，目的和條件。但是，由於每個公司的流程都包含詳細的設計操作和信息，</p>
-<p>直接在公司之間進行比較並不容易。從而，我們以“流程”的概念簡化了每個公司的設計流程塊以幫助其可比性，同時保持必要的特徵。</p>
-<p>我們發現在一組小的連續階段中存在一種模式。那裡是完成所有連續階段的主要工作。完成後明確的新階段從另一項工作開始。我們將這些小階段定義為“流程塊”。其特點是初始輸入，內部迭代，決策，最終結果和不可逆的趨勢（圖<span>4</span>）。</p>
-<p>內置的流程塊中的流程從初始輸入開始，跨小範圍運行裡面的階段。迭代或反饋可能在內部的小階段之間發生大塊。最後，他們對最終結果做出最終決定。</p>
-<p>這是一個里程碑，指示該階段將跳到下一階段。</p>
-<p>例如，在圖<span>3</span>中藍色方框中，該塊的主要工作是制定執行六個小階段的設計概念。當他們在渲染階段，如果渲染結果，他們可以回到構思草圖階段</p>
-<p>對渲染評估事件不滿意。在最後階段，設計樣機，因為結果由高層管理人員確認，並且然後跳到“產品計劃會議”。</p>
-<p>兩個流程塊之間的流程幾乎沒有機會在前一個結果進入下一個塊的輸入之後反轉。</p>
-<p>跨團隊通常進行最終設計，並由每個部門的最高經理。返回上一個塊意味著它</p>
-<p>無法滿足投放市場的時間表。因此，應該有一個最高管理層關於這個問題的決定。階段之間的反向迭代或反饋在實際情況中很少發生。它發生在一個塊中的各個階段之間。因此，似乎項目之間幾乎不可能放棄階段，但可能在階段之間。</p>
-<p>我們通過其主要工作來命名流程塊。在命名塊時，</p>
-<p>我們發現，“概念設計”一詞在工程上的用法有所不同</p>
-<p>設計和工業設計。工程設計中的概念設計是關於通過開發廣泛的解決方案與產品的工作原理相關的技術概念（<span>Haik</span>＆<span>Shahin</span>，<span>2010; Kroll</span>，<span>Condoor</span>和<span>Jansson</span>，<span>2001</span>；烏爾曼，<span>2009</span>年）。但是，工業設計師在概念設計中決定產品樣式和交互的方向階段，以概念關鍵字，情緒板，想法表示草圖和用戶場景（<span>Press</span>＆<span>Cooper</span>，<span>2003; Tovey</span>＆<span>Harris</span>，<span>1999;Vredenburg</span>，<span>Isensee</span>，<span>Righi</span>和<span>Design</span>，<span>2001</span>年）。因此，我們標記了這個概念</p>
-<p><img alt="" height="503" src="https://s40723239.github.io/cd2020/images/4.png" width="440"/></p>
-</div>
-</div><h1>group4</h1><h2>40623251</h2>
-<p><span>test</span></p><h2>40623115</h2>
-<p><span>test</span></p><h2>40623144</h2>
-<p><span>test</span></p>
-<p></p>
+<br />40723239 << <a href='40723239.html'>Previous</a> <a href='Assignment2.html'>Next</a> >> Assignment2</div>
+        
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+    
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        </body></html>
+        
